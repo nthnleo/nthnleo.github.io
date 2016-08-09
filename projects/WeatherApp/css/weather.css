@@ -1,12 +1,5 @@
 /* css styles for weather app */
 
-/* applies to the whole body */	
-body{
-	background-color: purple;
-	color: orange;
-}
-
-
 /* applies to the horizontal line formed
 by the <hr /> tag */
 hr{
@@ -15,8 +8,7 @@ hr{
 
 /* two id selectors; apply to named elements in the HTML */
 
-#weather_app{
-	background-color: white;	
+#weather_app{	
 	border: 4px solid #000033;
 	border-radius: 30px;
 	border-color: orange;

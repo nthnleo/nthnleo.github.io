@@ -1,11 +1,10 @@
+img {
+  margin: auto;
+}
+
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   background-color: transparent;
   color: #999999;
-}
-
-img {
-	display: block;
-	margin: auto;
 }
 
 #intro h1 {
@@ -14,7 +13,7 @@ img {
 
 .navbar-nav {
 	width: 100%;
-    text-align: center;
+  text-align: center;
 }
 
 .navbar-nav > li, .navbar-nav .navbar-brand {
@@ -23,5 +22,16 @@ img {
     margin: 0 15px;
  }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
 
