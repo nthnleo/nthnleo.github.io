@@ -49,5 +49,11 @@ h2 {
 }
 
 #socialnav a img {
-  padding-right: 10px;
+  margin-right: 5%;
+}
+
+#socialnav {
+  text-align: center;
+  display: block;
+  margin-top: 5%;
 }
