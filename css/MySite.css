@@ -1,6 +1,17 @@
-img {
+video {
+  display: block;
   margin: auto;
 }
+
+body { 
+  padding-top: 70px;  /*for navbar*/ 
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   background-color: transparent;
@@ -20,18 +31,23 @@ img {
     float: none;
     display: inline-block;
     margin: 0 15px;
+    opacity: 1;
  }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+
+#game {
+  position: absolute;
+  top: 0px;
 }
 
-.row-eq-height > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+.navbar {
+  opacity: 0.9;
 }
 
+#music {
+  padding-top: 20px;
+}
+
+#socialnav a img {
+  padding-right: 10px;
+}

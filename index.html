@@ -13,60 +13,87 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+	<!-- Instagram embed -->
+	<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
+
 	<!-- User CSS -->
 	<link rel="stylesheet" href="css/MySite.css">
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
 
-
+	<!-- navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<ul class="nav navbar-nav">
 			<b class="navbar-brand">Nathaniel</b>
-			<li class="nav-item active"><a>About</a></li>
-			<li class="nav-item"><a href="projects.html">Projects</a></li>
+			<li class="nav-item active"><a href="#">About</a></li>
+			<li class="nav-item"><a href="#projects">Projects</a></li>
+			<li class="nav-item"><a href="#hobbies">Hobbies</a></li>
 			<li class="nav-item"><a href="Nathaniel Leo Current Resume.pdf" target="_blank">Resume</a></li>
-			<li class="nav-item"><a href="hobbies.html">Hobbies</a></li>
-			<li class="nav-item"><a href="contact.html">Contact</a></li>
 		</ul>
 
 	</nav>
 
 	<div class="container">
 		<!-- About -->
-		<div class="row row-eq-height">
+		<div class="row">
 			<div class="col-md-6 col-lg-5 col-lg-offset-1">
-				<img src="media/HomePhoto.jpg" class="img-responsive" />
+				<img src="media/HomePhoto.jpg" class="img-responsive">
 			</div>
 			<div class="col-md-6 col-lg-5" id="intro">
 				<h1>Nathaniel Leo</h1>
 
 				<p>
-					Thanks for visiting my website! I recently graduated from UC Davis with a B.S. in Computer Science and a minor in Technology Management. My goal is to obtain an entry-level/junior developer posiition. My prior experience includes an internship at the Sacramento County Department of Technology and a university position as an IT consultant for the UC Davis Computer Lab Management Department.
+					Thanks for visiting my website! I recently graduated from UC Davis with a B.S. in Computer Science and a minor in Technology Management. My goal is to obtain an entry-level/junior developer position. My prior experience includes an internship at the Sacramento County Department of Technology and a university position for the UC Davis Computer Lab Management Department.
 				</p>
 				<p>
 					My hometown and current location is San Francisco, California. I first picked up programming in my AP Java class at Lowell High School and since then, I have been hooked. I am a jack of many trades: back-end, web development, mobile development, and databases, but hope to become a master of at least one someday. Please check my resume for more details.
 				</p>
 				<p>
-					Outside of programming, I try to be as active as possible through tennis and weightlifting. My parents started me on tennis when I was eight, and I played for my high school varsity team. My passion for innovation extends to automobiles; I enjoy maintaining my 1994 Mazda Miata myself.
+					Outside of programming, I try to be as active as possible through tennis and weightlifting. My parents started me on tennis when I was eight, and I played for my high school varsity team. My passion for innovation extends to automobiles; I enjoy maintaining my 1994 Mazda Miata myself. Manual transmissions for life!
 				</p>
 				
+				<!-- links to social media -->
+				<nav id="socialnav">
+					<a target="_blank" href="https://www.facebook.com/nthnleo" ><img src="icons/facebook.svg" height="50px"></a>
+					<a target="_blank" href="https://www.instagram.com/nthnleo/?hl=en"><img src="icons/instagram.svg" height="50px"></a>
+					<a target="_blank" href="https://www.linkedin.com/in/nthnleo"><img src="icons/linkedin.svg" height="50px"></a>
+					<a target="_blank" href="https://soundcloud.com/nathan-leo"><img src="icons/soundcloud.svg" height="50px"></a>
+				</nav>
+
 			</div>
 		</div>
 
 		<!-- SoundCloud --> 
-		<div class="row">
+		<div class="row" id="music">
 			<div class="col-lg-10 col-lg-offset-1">
-				<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/29787391&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=true&amp;visual=false"></iframe>
+				<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/29787391&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=true&amp;visual=false"></iframe>
 			</div>
 		</div>
 
 		<!-- Projects -->
-		<div class="row">
-			<iframe src="projects/WeatherApp/weatherApp.html" frameborder="no"></iframe>
-
+		<div class="row" id="projects">
+			<h2>Projects</h2>
+			<div class="col-lg-10 col-lg-offset-1">
+				<iframe src="projects/WeatherApp/weatherApp.html" frameborder="no" height="475" width="360"></iframe>
+				<iframe src="projects/BikerGame/biker.html" frameborder="no" height="350" width="575" scrolling="no" id="game"></iframe>
+			</div>
 		</div>
 
-		
+		<!-- Hobbies -->
+		<div class="row" id="hobbies">
+			<h2>Hobbies</h2>
+			<div class="col-md-6 col-lg-5 col-lg-offset-1">
+				<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0462962963% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BFaYFiKG31F/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Two years later and still getting the same smiles per gallon #davis #graffitibridge #miata #lagunablue #roadster 📷: @gabe_chan @wongsterful</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Nathan Leo (@nthnleo) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-05-15T03:03:56+00:00">May 14, 2016 at 8:03pm PDT</time></p></div></blockquote>
+			</div>
+			<div class="col-md-6 col-lg-5">
+				<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BAtDjFim37L/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Food like this makes life worth living #tsujita #tsukemen #ramen #sakedon #LA #sawtelle</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Nathan Leo (@nthnleo) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-19T02:33:04+00:00">Jan 18, 2016 at 6:33pm PST</time></p></div></blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<video src="media/TennisServe.mp4" width="320" autoplay loop muted>Your browser does not support HTML5 video.</video>
+		</div>
+
+
 	</div>
 </body>
 </html>
