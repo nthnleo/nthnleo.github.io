@@ -1,3 +1,5 @@
+var zipcode = 94118;
+
 var callbackFunction1 = function(data) {
     var cond = data.query.results.channel.item.condition;
     var temp = cond.temp;
@@ -44,7 +46,7 @@ var callbackFunction1 = function(data) {
 
 function submitZip() {
     var inputElmt = document.getElementById("codeInput");
-    var zipcode = inputElmt.value;
+    zipcode = inputElmt.value;
 
     var script = document.createElement('script');
     
@@ -53,19 +55,16 @@ function submitZip() {
 }
 
 var callbackFunction2 = function(data) {
-var forecast = data.query.results.channel.item.forecast;
-var oneForecast = forecast[1].text;
-	var twoForecast = forecast[2].text;
-	document.getElementById("forecast").innerHTML = "<p><b>Tomorrow's Forecast: </b>" + oneForecast + "<br><b>Day After Tomorrow's Forecast: </b>" + twoForecast + "</p>";
+    var forecast = data.query.results.channel.item.forecast;
+    var oneForecast = forecast[1].text;
+    var twoForecast = forecast[2].text;
+    document.getElementById("forecast").innerHTML = "<p><b>Tomorrow's Forecast: </b>" + oneForecast + "<br><b>Day After Tomorrow's Forecast: </b>" + twoForecast + "</p>";
 }
 
 function addForecast() {
-	var inputElmt = document.getElementById("codeInput");
-    var zipcode = inputElmt.value;
-
-    var script = document.createElement('script');
-    
+    var script = document.createElement('script');   
     script.src = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='"+zipcode+", United States')&format=json&callback=callbackFunction2";
     document.getElementsByTagName('head')[0].appendChild(script);
 }
+
 

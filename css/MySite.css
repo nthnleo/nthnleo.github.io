@@ -12,6 +12,10 @@ h2 {
   text-decoration: underline;
 }
 
+iframe {
+  display: block;
+  margin: auto;
+}
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   background-color: transparent;
@@ -34,12 +38,6 @@ h2 {
     opacity: 1;
  }
 
-
-#game {
-  position: absolute;
-  top: 0px;
-}
-
 .navbar {
   opacity: 0.9;
 }
@@ -56,4 +54,12 @@ h2 {
   text-align: center;
   display: block;
   margin-top: 5%;
+}
+
+.hobbies > * {
+  margin-top: 10px;
+}
+
+#hobbyHeader {
+  margin-bottom: 0;
 }

@@ -80,11 +80,9 @@
 
 	<script src="js/weather.js"></script>
 
-	<!-- Gets the current weather in Davis, where the woeid is 2389646 -->
+	<!-- Gets the current weather in San Francisco -->
 
-	<script id="weatherQuery" src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 2389646&format=json&callback=callbackFunction1">
-	</script>
-	<script id="weatherQuery" src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 2389646&format=json&callback=callbackFunction2">
+	<script id="weatherQuery" src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='94118, United States')&format=json&callback=callbackFunction1";">
 	</script>
 </body>
 </html>
