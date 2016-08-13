@@ -63,3 +63,13 @@ iframe {
 #hobbyHeader {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 605px) {
+  #bikergame {
+    display: none;
+  }
+}
+
+#bikergame {
+  overflow: hidden;
+}
