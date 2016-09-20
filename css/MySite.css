@@ -50,6 +50,10 @@ iframe {
   margin-right: 5%;
 }
 
+#socialnav a img:active {
+  opacity: 0.5;
+}
+
 #socialnav {
   text-align: center;
   display: block;
